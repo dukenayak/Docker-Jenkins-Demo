@@ -10,11 +10,11 @@ pipeline {
 
   }
 
-	agent any
-
-  stages {
-
-    stage('Cloning Git') {
+	agent {
+        label 'master'
+    }
+    stages {
+        stage("Fetch repository") {
 
       steps {
 
