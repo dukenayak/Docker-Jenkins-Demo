@@ -10,7 +10,7 @@ pipeline {
 
   }
 
-  agent master
+	agent {"master"}
 
   stages {
 
